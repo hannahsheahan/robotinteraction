@@ -607,14 +607,6 @@ BOOL ok=TRUE;
 
     // Eye tracker in use? (4)
     EyeTrackerFlag = !STR_null(EyeTrackerConfig);
-
-    // Count the rest-breaks in case they have been specified.
-    /*
-	for( RestBreakCount=0; ((RestBreakCount < RESTBREAK_MAX) && (RestBreakTrials[RestBreakCount] != 0)); RestBreakCount++ );
-
-    printf("ConfigLoad(%s) Load %s.\n",file,STR_OkFailed(ok));
-    CONFIG_list(printf);
-	*/
     return(ok);
 }
 
@@ -657,10 +649,7 @@ static matrix P(3,1);
     if( !STR_null(GraphicsString) )
     {
         P = TextPosition;
-        //P(2,1) -= 3.0;
-        //P(2,1) = 9.0;
-        
-	GraphicsDisplayText(GraphicsString,1.0,P);
+   	    GraphicsDisplayText(GraphicsString,1.0,P);
     }
 }
 
