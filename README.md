@@ -2,7 +2,7 @@
 Code for my vBOT human-robot interaction experiments (collab. with James Ingram)
 
 Contains base c++ code developed for testing human-robot interaction motor learning experiments during my PhD. 
-Many experiment variations have been derived from these basic code sets, which are not included in this repo.
+We had lots of slightly different experiment variations derived from these basic code sets, but I haven't bothered to include them all in this repo.
 
 In general:
 - the code of interest for running the robot is the single .cpp file per directory.
